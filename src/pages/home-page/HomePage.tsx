@@ -12,10 +12,10 @@ const HomePage = () => {
     <>
       <Navbar />
       <HomeHero />
-      {/* <Designers />
+      <Designers />
       <Services />
       <About />
-      <Footer /> */}
+      <Footer />
     </>
   );
   
