@@ -1,1 +1,82 @@
 @import '../../styles/loader';
+
+.our-designers {
+    background-color: $black;
+    width: 100%;
+    padding: 2.5% 5%;
+
+    @media screen and (max-width: $mobile-portrait) {
+        padding: 10% 5%;
+    }
+
+    .our-designers-inner {
+        min-height: 50vh;
+        max-width: $max-width;
+        margin: 0 auto;
+        display: grid;
+        gap: 50px;
+
+        .designers-box {
+
+            &:nth-of-type(1) {
+
+                .underlineImg {
+                    max-width: 400px;
+                }
+            }
+            
+            &:nth-of-type(2) {
+
+                .border-conatiner {
+                    border-radius: 1rem;
+                    padding: 4px;
+                    background: linear-gradient(45deg, rgba(255,195,0,1), rgba(123,77,0,1));
+
+                    .designers-container {
+                        border-radius: 1rem;
+                        background-color: $bgColor;
+                        display: grid;
+                        grid-template-columns: 1fr 2fr 1fr;
+                        gap: 20px;
+                        padding: 20px 20px 40px 20px;
+
+                        @media screen and (max-width: $tablet) {
+                            grid-template-columns: 1fr 1fr;
+                        }
+                        @media screen and (max-width: $mobile-portrait) {
+                            grid-template-columns: 1fr;
+                            gap: 40px;
+                        }
+                        
+                        .designer {
+                            cursor: pointer;
+    
+                            .designer-image {
+                                margin-bottom: 25px;
+                                width: 100%;
+                                min-height: 400px;
+                                height: 400px;
+
+                                @media screen and (max-width: $laptops) {
+                                    min-height: 350px;
+                                    height: 350px;
+                                }
+
+                                @media screen and (max-width: $mobile-portrait) {
+                                    height: auto;
+                                }
+                            }
+        
+                            .designer-bottom {
+        
+                                .bottom-line{
+        
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
