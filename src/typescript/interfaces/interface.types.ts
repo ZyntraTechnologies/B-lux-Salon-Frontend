@@ -4,3 +4,9 @@ export interface Designer {
     role: string,
     name: string,
 }
+
+export interface Service {
+    id: number,
+    image: string,
+    serviceName: string,
+}
