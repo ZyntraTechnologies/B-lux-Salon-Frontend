@@ -1,0 +1,12 @@
+@import '../../styles/loader';
+
+.underlineImg {
+    max-width: 400px;
+
+    @media screen and (max-width: $mobile-portrait) {
+        width: 300px;
+    }
+    @media screen and (max-width: $mobile) {
+        width: 280px;
+    }
+}
