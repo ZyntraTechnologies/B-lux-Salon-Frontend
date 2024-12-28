@@ -4,3 +4,11 @@
   box-sizing: border-box;
   text-decoration: none;
 }
+
+a{
+  list-style: none;
+
+  &:hover{
+    color: #FFC300 !important;
+  }
+}
