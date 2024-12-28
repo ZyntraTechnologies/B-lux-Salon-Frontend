@@ -1,1 +1,52 @@
 @import '../../styles/loader'; 
+
+
+.homehero{
+    background: url(../../assets/images/hero-image.svg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: -1;
+
+    &::after{
+        content: '';
+        position: absolute;
+        background-image: url(../../assets/images//dark-hero.svg);
+        top: 0;
+        height: 100%;
+        width: 100%;
+        background-size: 100%;
+
+    }
+    &-inner{
+        display: flex;
+        width: 100%;
+        height: 100%;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        &-firstword{
+            color: $white;
+            font-size: 3rem;
+            z-index: 100000;
+            font-family: $secondary-font;
+        }
+        &-secondword{
+            font-size: 6rem;
+            z-index: 100000;
+            font-family: $primary-font;
+            background: linear-gradient(to right, #F8BD01, #916100);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            color: transparent; 
+            
+            
+        }
+    }
+
+}
