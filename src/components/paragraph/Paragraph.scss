@@ -1,0 +1,10 @@
+@import '../../styles/loader';
+
+.paragraph {
+    font-family: $secondary-font;
+    font-size: 22px;
+
+    @media screen and (max-width: $mobile) {
+        font-size: 14px;
+    }
+}
