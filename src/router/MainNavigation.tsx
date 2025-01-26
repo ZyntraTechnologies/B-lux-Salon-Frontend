@@ -10,7 +10,7 @@ const MainNavigation = () => {
     <BrowserRouter>
       <Routes>
         <Route path='/' Component={HomePage}/>
-        <Route path='contact' Component={ContactPage}/>
+        <Route path='/contact' Component={ContactPage}/>
         <Route path='/work' Component={OurWorkPage}/>
         <Route path='/about' Component={AboutPage}/>
       </Routes>

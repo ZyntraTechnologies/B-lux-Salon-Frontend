@@ -1,1 +1,70 @@
 @import '../../styles/loader';
+
+.about-section {
+    background-color: $bgColor;
+    min-height: 60vh;
+    width: 100%;
+    padding: 0 5%;
+
+    @media screen and (max-width: $mobile) {
+        padding: 0 5% 10% 5%;
+    }
+
+    .about-inner {
+        max-width: $max-width;
+        min-height: 60vh;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+
+        @media screen and (max-width: $desktop) {
+            min-height: 75vh;
+        }
+        @media screen and (max-width: $laptops) {
+            min-height: 100vh;
+        }
+        @media screen and (max-width: $mobile-portrait) {
+            grid-template-columns: 1fr;
+        }
+        @media screen and (max-width: $mobile-portrait) {
+            grid-template-rows: 2fr 1fr;
+        }
+
+        .about-box {
+            overflow: hidden;
+
+            .scissorImg {
+                width: 80%;
+                transform: translate(-50%, -50%) rotate(50deg);
+                position: absolute;
+                background-size: contain;
+                top: 55%;
+                left: 45%;
+                overflow: hidden;
+
+                @media screen and (max-width: $laptops) {
+                    width: 100%;
+                }
+                @media screen and (max-width: $mobile-portrait) {
+                    transform: translate(-50%, -35%) rotate(50deg);
+                }
+            }
+
+            &:nth-of-type(1) {
+                display: flex;
+                position: relative;
+                flex-direction: column;
+                justify-content: center;
+            }
+            
+            &:nth-of-type(2) {
+                display: flex;
+                align-items: center;
+
+                @media screen and (max-width: $tablet) {
+                    padding-left: 0;
+                }
+            }
+        }
+    }
+}

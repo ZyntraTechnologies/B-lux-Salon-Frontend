@@ -1,1 +1,120 @@
 @import '../../styles/loader';
+
+.navbar{
+    width: 100%;
+    position: absolute;
+
+    &-outer{
+        height: 100%;
+        width: 100%;
+        z-index: 200;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 1rem 0 0;
+        
+
+        &::after{
+            content: '';
+            position: absolute;
+            background-image: url(../../assets/images/navigation-border.svg);
+            background-repeat: no-repeat;
+            bottom: -30px;
+            height:15px;
+            width: 90%;
+            background-size: 100%;
+            
+
+        }
+
+
+    }
+    &-inner{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 6%;
+        
+
+        &-ul{
+            display: flex;
+            list-style: none;
+            gap: 10%;
+            width: 40%;
+            color: white;
+            cursor: pointer;
+        }
+
+        &-li{
+            font-family: $secondary-font;
+            transition: .3s;
+
+            &:hover {
+                color: #f8bd01;
+                transition: .3s;
+            }
+        }
+
+        &-title{
+            width: 20%;
+            color: white;
+            text-align: center;
+            cursor: pointer;
+
+
+            h1{
+                font-weight: 100;
+                font-family: $primary-font;
+            }
+            
+        }
+        &-openstatus{
+            display: flex;
+            gap: 2%;
+            width: 30%;
+            color: white;
+            align-items: center;
+            position: relative;
+            cursor: pointer;
+            justify-content: flex-end;
+            padding-right: 2rem;
+            font-family: $secondary-font;
+
+            &-bulb{
+                width: 10px;
+                height: 10px;
+                border-radius: 50%;
+                background: #00ff00;
+            }
+            &-text{
+                font-size: 0.8rem;
+                
+            }
+        }
+        &-button{
+            background-color: transparent;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            width: 15%;
+            height: 2rem;
+            color: $white; 
+            border: 1px solid transparent; 
+            border-image: linear-gradient(to right, #F8BD01, #916100) 1;
+            padding: 0 10px; 
+            border-radius: 0;
+            transition: .3s ease-in;
+            
+            &:hover {
+                background-color: #f8bd01;
+                color: #000;
+                transition: .3s;
+            }
+        }
+    }
+
+}
