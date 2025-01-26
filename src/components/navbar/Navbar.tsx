@@ -1,3 +1,4 @@
+import { NavbarPropsComponentProps } from "../../typescript/types/components.types";
 import "./Navbar.scss";
 
 const navbar = [
@@ -7,7 +8,7 @@ const navbar = [
   { item: "About us" },
 ];
 
-const Navbar = () => {
+const Navbar = (props: NavbarPropsComponentProps) => {
   return (
     <div className="navbar">
       <div className="navbar-outer">
@@ -29,7 +30,7 @@ const Navbar = () => {
               Opening time MON-SUN | 9.00 AM - 7.00 PM
             </div>
           </div>
-          <button className="navbar-inner-button">Make an appointment</button>
+          <button className="navbar-inner-button" onClick={props.handlePopup}>Make an appointment</button>
         </div>
       </div>
     </div>
