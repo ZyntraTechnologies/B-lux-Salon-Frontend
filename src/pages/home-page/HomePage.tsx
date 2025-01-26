@@ -1,4 +1,3 @@
-import { useState } from 'react';
 import About from '../../components/about/About';
 import Designers from '../../components/designers/Designers';
 import Footer from '../../components/footer/Footer';
