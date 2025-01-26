@@ -31,12 +31,12 @@
         &-firstword{
             color: $white;
             font-size: 3rem;
-            z-index: 100000;
+            z-index: 1000;
             font-family: $secondary-font;
         }
         &-secondword{
             font-size: 6rem;
-            z-index: 100000;
+            z-index: 1000;
             font-family: $primary-font;
             background: linear-gradient(to right, #F8BD01, #916100);
             -webkit-background-clip: text;
