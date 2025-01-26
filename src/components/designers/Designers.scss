@@ -54,12 +54,13 @@
                             .designer-image {
                                 margin-bottom: 25px;
                                 width: 100%;
-                                min-height: 400px;
-                                height: 400px;
+                                min-height: 320px;
+                                height: 320px;
+                                aspect-ratio: 1.66666;
 
                                 @media screen and (max-width: $laptops) {
-                                    min-height: 350px;
-                                    height: 350px;
+                                    min-height: 320px;
+                                    height: 320px;
                                 }
 
                                 @media screen and (max-width: $mobile-portrait) {

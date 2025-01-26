@@ -1,6 +1,9 @@
 @import '../../styles/loader';
 
 .navbar{
+    width: 100%;
+    position: absolute;
+
     &-outer{
         height: 100%;
         width: 100%;
@@ -9,7 +12,8 @@
         display: flex;
         justify-content: center;
         align-items: center;
-
+        padding: 1rem 0 0;
+        
 
         &::after{
             content: '';
@@ -42,11 +46,18 @@
             width: 40%;
             color: white;
             cursor: pointer;
+        }
 
-            &-li{
-                font-family: $secondary-font;
+        &-li{
+            font-family: $secondary-font;
+            transition: .3s;
+
+            &:hover {
+                color: #f8bd01;
+                transition: .3s;
             }
         }
+
         &-title{
             width: 20%;
             color: white;
@@ -68,6 +79,10 @@
             align-items: center;
             position: relative;
             cursor: pointer;
+            justify-content: flex-end;
+            padding-right: 2rem;
+            font-family: $secondary-font;
+
             &-bulb{
                 width: 10px;
                 height: 10px;
@@ -91,12 +106,14 @@
             border: 1px solid transparent; 
             border-image: linear-gradient(to right, #F8BD01, #916100) 1;
             padding: 0 10px; 
-            border-radius: 50px;
+            border-radius: 0;
+            transition: .3s ease-in;
             
             &:hover {
                 background-color: #f8bd01;
                 color: #000;
-              }
+                transition: .3s;
+            }
         }
     }
 

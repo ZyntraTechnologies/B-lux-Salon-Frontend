@@ -36,12 +36,15 @@ const Footer = () => {
                 width="600"
                 height="200"
                 style={{ border: 0 }}
-                allowFullScreen=""
                 loading="lazy"
                 ></iframe>
               </div>
           </div>
-          <div className="copyrights">2024 Copyrights © All right reserved to <span>B’luxsaloon</span></div>
+          <div className="footer-credits">
+            <div className="copyrights">2024 Copyrights © All right reserved to <span>B’luxsaloon</span></div>
+            <div className="site-link">Designed by <a href="https://zyntratechnologies.com/" className="company">Zyntra Technologies</a></div>
+          </div>
+         
       </div>
       
     </div>
