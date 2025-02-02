@@ -1,7 +1,6 @@
 @import '../../styles/loader'; 
 
-
-.homehero{
+.homehero {
     background: url(../../assets/images/hero-image.svg);
     background-size: cover;
     background-position: center;
@@ -9,7 +8,6 @@
     height: 100vh;
     top: 0;
     width: 100%;
-    z-index: -1;
 
     &::after{
         content: '';
@@ -31,12 +29,18 @@
         &-firstword{
             color: $white;
             font-size: 3rem;
-            z-index: 1000;
+            z-index: 10;
             font-family: $secondary-font;
+
+            @media screen and (max-width: $mobile) {
+                font-size: 20px;
+                margin-bottom: 20px;
+            }
         }
         &-secondword{
             font-size: 6rem;
-            z-index: 1000;
+            z-index: 10;
+            text-align: center;
             font-family: $primary-font;
             background: linear-gradient(to right, #F8BD01, #916100);
             -webkit-background-clip: text;
@@ -46,6 +50,9 @@
             text-shadow: 0 0 5px #F8BD01, 0 0 10px #F8BD01, 0 0 20px #F8BD01, 0 0 40px #916100, 0 0 80px #916100;
             animation: glow 1.5s infinite alternate;
             
+            @media screen and (max-width: $mobile) {
+                font-size: 5rem;
+            }
         }
     }
 
