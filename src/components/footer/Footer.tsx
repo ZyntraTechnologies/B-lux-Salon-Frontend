@@ -18,7 +18,7 @@ const Footer = () => {
                   <h3 className='title'>Address</h3>
                   <p className="location">location details</p>
                   <p className="email">Email - Email@gmail.com</p>
-                  <p className="tel">Tel - 086 888 888</p>
+                  <p className="tel">Tel - 071 571 5777</p>
                 </div>
                 <div className="footer-details-quick-links">
                   <h3 className='title'>Quick links</h3>
@@ -42,7 +42,7 @@ const Footer = () => {
           </div>
           <div className="footer-credits">
             <div className="copyrights">2024 Copyrights © All right reserved to <span>B’luxsaloon</span></div>
-            <div className="site-link">Designed by <a href="https://zyntratechnologies.com/" className="company">Zyntra Technologies</a></div>
+            <div className="site-link">Designed by <a href="https://zyntratechnologies.com/" className="company">Zyntrax Technologies</a></div>
           </div>
          
       </div>
