@@ -1,6 +1,11 @@
 import { useState } from "react";
 
-const usePopup = () => {
+type usePopupProps = {
+    isPopupOpen: boolean,
+    handlePopup: () => void
+}
+
+const usePopup = (): usePopupProps => {
 
     const [isPopupOpen, setIsPopupOpen] = useState(false);
 
@@ -8,7 +13,7 @@ const usePopup = () => {
         setIsPopupOpen(!isPopupOpen);
     };
 
-    return [isPopupOpen, handlePopup];
+    return { isPopupOpen, handlePopup };
 }
 
 export default usePopup;

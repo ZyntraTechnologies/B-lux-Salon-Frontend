@@ -10,7 +10,7 @@ import Popup from '../../components/Popup/Popup';
 
 const HomePage = () => {
 
-  const [ isPopupOpen, handlePopup ] = usePopup();
+  const { isPopupOpen, handlePopup } = usePopup();
 
   return (
     <>
