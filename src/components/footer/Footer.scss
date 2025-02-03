@@ -128,6 +128,7 @@
         .main-details{
             display: flex;
             width: 100%;
+            gap: 50px;
 
             @media screen and (max-width: $tablet) {
                 flex-direction: column;
@@ -138,7 +139,7 @@
         .title{
             font-size: 24px;
             font-weight: 400;
-            padding-bottom: 1.5rem;
+            // padding-bottom: 1.5rem;
         }
 
         &-address{

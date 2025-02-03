@@ -15,9 +15,9 @@ const Footer = () => {
           <div className="footer-details">
               <div className="main-details">
                 <div className="footer-details-address">
-                  <h3 className='title'>Address</h3>
-                  <p className="location">location details</p>
-                  <p className="email">Email - Email@gmail.com</p>
+                  <h3 className='title'>No.278,New Kandy Road,</h3>
+                  <p className="location">Kothalawala,Kaduwela</p>
+                  <p className="email" >bluxunisexsalon@gmail.com</p>
                   <p className="tel">Tel - 071 571 5777</p>
                 </div>
                 <div className="footer-details-quick-links">
